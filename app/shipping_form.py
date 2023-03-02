@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SelectField, BooleanField, SubmitField
 from wtforms.validators import DataRequired
-from .map import map
+from .map import map, find_shortest_path
 
 tuple_map = list((k, tuple(v)) for k, v in map.items())
 # print(tuple_map)
